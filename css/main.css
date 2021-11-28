@@ -1,0 +1,159 @@
+body {
+  background-color: #0f101f;
+  color: #f1f1f1;
+  font-family: "Titillium Web", sans-serif;
+  height: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navigation {
+  height: 50px;
+  padding: 1rem 0;
+}
+.navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-transform: uppercase;
+}
+.navigation__list a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-size: 1.25rem;
+}
+.navigation__list a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 0.5rem;
+}
+
+.hero {
+  height: calc(100vh - 50px);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.8fr 0.2fr;
+  justify-items: center;
+  align-items: center;
+}
+.hero__backgroundContainer {
+  background: url(../static/img/RB16B_FRONT_shadowed_1.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+.hero__ctaExploreCar a {
+  position: relative;
+  border: 3px solid #f10000;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.hero__ctaExploreCar a:hover {
+  border: 3px solid #f1f1f1;
+}
+.hero__ctaExploreCar a::after {
+  content: "";
+  background: url(../img/formulaOne/downArrow.svg);
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 4.5rem;
+  left: calc(50% - 10px);
+}
+
+.exploreCar {
+  height: 100vh;
+  width: 100%;
+  background-color: #add;
+}
+.exploreCarCanvas {
+  width: 100%;
+  height: 100%;
+}
+
+.exploreDrivers {
+  height: 100vh;
+  background-color: #ad1da5;
+}
+
+.exploreTracks {
+  height: 100vh;
+  background-color: #a55;
+}
+
+.card {
+  width: 200px;
+  height: 360px;
+  background-color: #f1f1f1;
+  color: #0f101f;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 0.2fr 0.1fr 0.4fr;
+  border: 5px solid #f1f1f1;
+  border-radius: 0.5rem;
+}
+.card__driver {
+  position: relative;
+  grid-column: span 2;
+  grid-row: 1/3;
+}
+.card__driverPortrait {
+  position: relative;
+  z-index: 2;
+  background: url(../img/formulaOne/drivers/danieRicciardo.png);
+  background-size: cover;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+.card__driverFlag {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: url(../img/formulaOne/drivers/flags/1280px-Flag_of_Australia.svg.png);
+  height: 130px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.5rem 0.5rem 0 0;
+  grid-column: span 2;
+}
+.card__driverName {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-align: center;
+  align-self: center;
+  grid-column: span 2;
+  grid-row: 3/4;
+}
+.card__dataLabels {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  display: grid;
+  padding: 0 0 1rem 1rem;
+  font-size: 0.875rem;
+}
+.card__driverActiveData {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  font-size: 0.875rem;
+  display: grid;
+  justify-content: end;
+  text-align: right;
+  padding: 0 1rem 1rem 0;
+}
+
+/*# sourceMappingURL=main.css.map */

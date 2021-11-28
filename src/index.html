@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" type="image/jpg" href="/favicon.png" />
+    <title>formulaOneFanSite</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li><a href="#exploreTracks">Explore tracks</a></li>
+            <li><a href="#exploreCar">Explore car</a></li>
+            <li><a href="#exploreDrivers">Explore drivers</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <div class="hero" id="hero">
+          <div class="hero__backgroundContainer"></div>
+          <div class="hero__ctaExploreCar">
+            <a href="#exploreCar">Explore f1 car</a>
+          </div>
+        </div>
+        <div class="exploreCar" id="exploreCar">
+          <canvas class="exploreCarCanvas"></canvas>
+        </div>
+        <div class="exploreDrivers" id="exploreDrivers">
+          <div class="card">
+            <div class="card__driver">
+              <div class="card__driverPortrait"></div>
+              <div class="card__driverFlag"></div>
+            </div>
+            <h2 class="card__driverName">Daniel Ricciardo</h2>
+            <div class="card__dataLabels">
+              <span>Team:</span>
+              <span>Wins:</span>
+              <span>Podiums:</span>
+              <span>Poles:</span>
+              <span>Points:</span>
+            </div>
+            <div class="card__driverActiveData">
+              <span class="team mclaren">team</span>
+              <span class="wins">wins</span>
+              <span class="podiums">podiums</span>
+              <span class="poles">poles</span>
+              <span class="points">points</span>
+            </div>
+          </div>
+        </div>
+        <div class="exploreTracks" id="exploreTracks"></div>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+  <script type="module" src="script.js"></script>
+</html>
